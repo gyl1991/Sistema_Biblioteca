@@ -35,11 +35,11 @@ O sistema contempla entidades como **usuários, cursos, livros, exemplares, empr
 
 2. Acesse a pasta do projeto:
 
-cd sistema-biblioteca
+  cd sistema-biblioteca
 
 3. Importe o script biblioteca.sql no seu MySQL Workbench ou execute diretamente:
 
-source biblioteca.sql;
+  source biblioteca.sql;
 
 4. Teste as consultas de exemplo para validar o funcionamento.
 
@@ -47,34 +47,34 @@ source biblioteca.sql;
 
 Consultar empréstimos ativos:
 
-SELECT * FROM emprestimo WHERE status_emprestimo = 'ativo';
+  SELECT * FROM emprestimo WHERE status_emprestimo = 'ativo';
 
 Renovar empréstimo:
 
-CALL renovar_emprestimo(1);
+  CALL renovar_emprestimo(1);
 
 Consultar histórico de um usuário:
 
-SELECT * FROM vw_historico_usuario WHERE usuario = 'Ana Silva';
+  SELECT * FROM vw_historico_usuario WHERE usuario = 'Ana Silva';
 
 📊 Estrutura do Banco
 
-cursos → armazena os cursos dos usuários.
+  cursos → armazena os cursos dos usuários.
 
-usuario → dados pessoais e vínculo com curso.
+  usuario → dados pessoais e vínculo com curso.
 
-livros → catálogo de livros.
+  livros → catálogo de livros.
 
-exemplar → cópias físicas dos livros.
+  exemplar → cópias físicas dos livros.
 
-emprestimo → registros de empréstimos.
+  emprestimo → registros de empréstimos.
 
-multa → penalidades aplicadas.
+  multa → penalidades aplicadas.
 
 👨‍💻 Autor
 
-Projeto desenvolvido por Gilberto Valdivino Loureiro📍 Campina Grande - PB, Brasil
+  Projeto desenvolvido por Gilberto Valdivino Loureiro📍 Campina Grande - PB, Brasil
 
 📜 Licença
 
-Este projeto é de uso acadêmico e está sob a licença MIT.Sinta-se livre para usar e modificar conforme necessário.
+  Este projeto é de uso acadêmico e está sob a licença MIT.Sinta-se livre para usar e modificar conforme necessário.
